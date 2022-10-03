@@ -795,7 +795,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'vanilla',
+  'database' => 'storytest',
   'username' => 'root',
   'password' => 'VvOxPAQbPG3i+*',
   'prefix' => '',
@@ -813,3 +813,6 @@ $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml'
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
+
+$conf['preprocess_js'] = FALSE;
+$conf['preprocess_css'] = FALSE;
